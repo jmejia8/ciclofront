@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BiciApp Saltillo</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 1.5rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #bbf7d0;
+      border-radius: 1.5rem;
+      padding: 3rem 2.5rem;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(22, 163, 74, 0.08);
+    }
+
+    .logo {
+      display: block;
+      width: 110px;
+      height: 110px;
+      object-fit: contain;
+      margin: 0 auto 2rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #dcfce7;
+      color: #16a34a;
+      border: 1px solid #86efac;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      color: #14532d;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+
+    .divider {
+      width: 40px;
+      height: 3px;
+      background: linear-gradient(90deg, #16a34a, #4ade80);
+      border-radius: 999px;
+      margin: 0 auto 1.5rem;
+    }
+
+    p {
+      color: #4b7a58;
+      font-size: 0.975rem;
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+    }
+
+    .cta {
+      margin-top: 2rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #16a34a;
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.75rem 1.75rem;
+      border-radius: 999px;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 4px 14px rgba(22, 163, 74, 0.3);
+    }
+
+    .cta:hover { background: #15803d; transform: translateY(-2px); }
+    .cta:active { transform: translateY(0); }
+
+    .cta svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+    footer {
+      margin-top: 2.5rem;
+      color: gray;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img
+      src="https://biciapp.saltillo.gob.mx/static/img/logos/BiciApp_Saltillo_Logo_275x275.png"
+      alt="BiciApp Saltillo"
+      class="logo"
+    />
+
+    <div class="badge">Aviso importante</div>
+
+    <h1>Muchas gracias por su apoyo</h1>
+
+    <div class="divider"></div>
+
+    <p>Ha terminado la etapa de pruebas.</p>
+     <p>Ahora la plataforma vive en</p>  
+    
+    <a href="https://biciapp.saltillo.gob.mx">
+    <h1>biciapp.saltillo.gob.mx</h1>
+    </a>
+
+    <a href="https://biciapp.saltillo.gob.mx" class="cta">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+      </svg>
+      Registrarse en BiciApp
+    </a>
+
+    <footer>Todos los datos subidos en <b>cicloplataforma.ooptim.com</b> han sido borrados.</footer>
+  </div>
+</body>
+</html>
